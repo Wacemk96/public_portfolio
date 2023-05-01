@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Ruda:wght@400;500;600;700;800;900&display=swap');
+
+/* CSS Variables */
+:root {
+    --normal-font: 400;
+    --bold-font: 600;
+    --bolder-font: 900;
+    --line-height: 1.7rem;
+    --Navigation-Color: #000000;
+    --Color-1: #CCC6C6;
+    --Color-2: #272727;
+    --Color-3: #757373;
+    --Color-4: #FE9B01;
+    --Color-Text: #7A7A7A;
+    --Color-5: #18E0C6;
+    --Color-LinkedIn: #0077b5;
+    --Color-Twitter: #1da1f2;
+    --Color-Github: #333;
+    --transition: 0.2s ease-in-out;
+}
+
+/* Smooth scroll effect */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: var(--transition);
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--Color-2);
+}
+
+a:hover {
+    color: var(--Color-2);
+}
+
+/* Header */
+.header-primary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    font-size: 20px;
+    padding: 0 64px;
+    border-bottom: 1px solid rgb(215, 218, 221);
+}
+
+/* Navigation */
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+/* Button */
+.primary-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px 25px;
+    background-color: white;
+    border: none;
+}
+
+.primary-btn:hover {
+    background-color: var(--Navigation-Color);
+    transition: .2s ease-in;
+    color: white;
+    border-radius: 5px;
+}
+
+.action-icon img {
+    width: 20px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: top;
+    padding: 0 100px;
+    justify-content: space-between;
+    margin: 200px 0px;
+}
+
+.img-author .author-info {
+    font-family: 'Robot' sans-serif;
+}
+
+.img-author img {
+    width: 280px;
+    margin-right: 70px;
+}
+
+.author-infom,
+p,
+h1,
+h3 {
+    margin-bottom: 15px;
+}
+
+.author-info p {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--Color-1);
+}
+
+.author-info h1 {
+    font-size: 65px;
+    font-weight: 800;
+    color: var(--Color-2);
+}
+
+.author-info h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--Color-3);
+
+}
+
+img.icon2 {
+    width: 55px;
+}
+
+.contact {
+    border: 1px solid var(--Color-4);
+    border-radius: 5px;
+    padding: 10px 40px;
+    font-weight: 100;
+    font-family: 'Fira+Code', sans-serif;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+
+.contact:hover {
+    background-color: var(--Color-4);
+    color: white;
+}
+
+/* Cocial Icon */
+.social-icon {
+    margin-top: 40px;
+}
+
+.fa-linkedin,
+.fa-twitter,
+.fa-github {
+    background-color: var(--Color-4);
+    padding: 12px;
+    border-radius: 5px;
+    color: white;
+    margin-right: 8px;
+}
+
+.fa-linkedin {
+    background-color: var(--Color-LinkedIn);
+}
+
+.fa-linkedin:hover {
+    background-color: #0a8acf;
+}
+
+.fa-twitter {
+    background-color: var(--Color-Twitter);
+}
+
+.fa-twitter:hover {
+    background-color: #34aefa;
+}
+
+.fa-github {
+    background-color: var(--Color-Github);
+}
+
+.fa-github:hover {
+    background-color: #504e4e;
+}
+
+/* About Section */
+.main {
+    padding: 0 64px;
+}
+
+.about-title {
+    margin: 40px 0px;
+    position: relative;
+}
+
+.about-title h1 {
+    font-family: "Fira Code", sans-serif;
+    font-size: 26px;
+}
+
+.about-title hr {
+    position: absolute;
+    width: 20%;
+    margin-top: -30px;
+    margin-left: 200px;
+}
+
+.about-author {
+    display: flex;
+    margin: 0px 100px;
+}
+
+.about-author-info p {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    line-height: 2.5rem;
+    color: var(--Color-Text);
+    margin: 0 0 35px;
+}
+
+.about-author-info li {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: var(--Color-Text);
+    margin: 15px 45px;
+}
+
+/* Project Section */
+.project-heading {
+    font-size: 26px;
+    text-align: center;
+    color: var(--Color-5);
+    margin: 25px;
+    padding: 0px 60px;
+}
+
+.project-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px 0px;
+}
+
+.project-img,
+.project-info {
+    width: 510px;
+    height: 400px;
+}
+
+.project-img {
+    border-radius: 15px;
+    background-size: 100% auto;
+    background-position: top;
+    transition: 5s ease-in;
+    box-shadow: 2px -3px 20px 0px rgba(189, 189, 189, 0.75);
+    -webkit-box-shadow: 2px -3px 20px 0px rgba(189, 189, 189, 0.75);
+    -moz-box-shadow: 2px -3px 20px 0px rgba(189, 189, 189, 0.75);
+}
+
+.project-info {
+    padding: 50px;
+    text-align: center;
+}
+
+.project-info h1 {
+    font-family: "Ruda", sans-serif;
+    color: var(--Navigation-Color);
+    margin: 10px 0;
+}
+
+.project-info p {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--Color-Text);
+    line-height: 2rem;
+    margin: 20px 0;
+}
+
+.project-img:hover {
+    background-size: 100% auto;
+    background-position: bottom;
+    transition: 5s ease-in;
+}
+
+.one {
+    background-image: url(/assets/images/syealishah-Digital-Marketing-Website.png);
+}
+
+.two {
+    background-image: url(/assets/images/ZeeshanFalak-Dropshiping-Store-United-States.png);
+}
+
+.three {
+    background-image: url(/assets/images/ClaimFlowHealth-Medical-Billing-Website.png);
+}
+
+.four {
+    background-image: url(/assets/images/Ecommerce-woocommerce-elementor-wordpress.png);
+}
+
+.life-demo {
+    display: inline-block;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+/* Contact */
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+.contact-section p {
+    font-size: 18px;
+    color: var(--Color-5);
+}
+.icon-3 img {
+    width: 20px;
+}
+.contact-section h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--Navigation-Color);
+}
+.contact-text {
+    color: var(--Color-Text) !important;
+    font-size: 18px;
+    line-height: 2rem;
+    padding: 0px 30%;
+}
+.sayhello {
+    margin: auto;
+    font-family: "Fira Code", sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.icon-hello {
+    width: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 0px 15%;
+    margin: 50px 0;
+}
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-icon {
+    font-size: 20px;
+    padding: 4px;
+    background-color: white;
+    color: var(--Navigation-Color);
+    border-radius: 50%;
+    margin: 0px 5px;
+}
+.backtotop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px 0;
+}
+.footer-text {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    font-family: "Fira Code", sans-serif;
+    color: var(--Color-5);
+}
