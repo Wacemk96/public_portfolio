@@ -348,11 +348,11 @@ img.icon2 {
 }
 
 .one {
-    background-image: url(./assets/images/syealishah-Digital-Marketing-Website.png);
+    background-image: url(assets/images/syealishah-Digital-Marketing-Website.png);
 }
 
 .two {
-    background-image: url(./assets/images/ZeeshanFalak-Dropshiping-Store-United-States.png);
+    background-image: url(/assets/images/ZeeshanFalak-Dropshiping-Store-United-States.png);
 }
 
 .three {
@@ -360,7 +360,7 @@ img.icon2 {
 }
 
 .four {
-    background-image: url(./assets/images/Ecommerce-woocommerce-elementor-wordpress.png);
+    background-image: url(.../assets/images/Ecommerce-woocommerce-elementor-wordpress.png);
 }
 
 .life-demo {
