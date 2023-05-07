@@ -346,7 +346,7 @@ img.icon2 {
 }
 
 .one {
-    background-image: url(/assets/images/syealishah-Digital-Marketing-Website.png);
+    background-image: url(assets/images/syealishah-Digital-Marketing-Website.png);
 }
 
 .two {
@@ -594,7 +594,7 @@ img.icon2 {
         margin-right: auto;
     }
     .logo img {
-        width: 40px;
+        width: auto;
     }
     .project-info {
         order: 1;
