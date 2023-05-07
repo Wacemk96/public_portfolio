@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Main Style Sheet -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Icon stylesheet CDN https://remixicon.com/ and github https://github.com/Remix-Design/RemixIcon  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <title>Waseem Khan - Portfolio</title>
 </head>
 
@@ -20,11 +22,11 @@
             </a>
 
         </div>
-        <div class="navigation">
+        <div id="navigation" class="navigation">
             <nav class="nav-bar">
-                <ul class="nav-list">
+                <ul id="nav-list" class="nav-list">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#home" class="nav-link bounce">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="#home" class="nav-link">Project</a>
@@ -44,6 +46,9 @@
                     <img src="assets/icons/1f919.svg" alt="Book a call icon">
                 </span>
             </button>
+        </div>
+        <div class="navigation-icon">
+            <i class="ri-menu-fold-line" id="toggle"></i>
         </div>
     </header>
     <!-- Hero Section Start -->
@@ -94,7 +99,7 @@
                 <li>WordPress</li>
             </div>
             <div class="img-author">
-                <img src="assets/images/waseem-removebg-preview.png" alt="Author Image
+                <img class="about-img" src="assets/images/waseem-removebg-preview.png" alt="Author Image
             ">
             </div>
         </div>
@@ -223,11 +228,12 @@
         <div class="backtotop">
             <img src="assets/icons/back to the top icon.png" alt="">
         </div>
-        <p class="footer-text">Designed & Developer with elementor <br>
+        <p class="footer-text">Designed & Developer with HTML/CSS/JavaScript <br>
             by Waseem Khan</p>
     </footer>
     <!-- Script Font Awesome -->
     <script src="https://kit.fontawesome.com/a9bf99198c.js" crossorigin="anonymous"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>
